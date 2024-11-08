@@ -1,0 +1,209 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.section {
+  position: relative;
+  padding-top: 6rem; 
+  padding-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.background-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: auto;
+  min-height: 70vh; 
+  object-fit: contain;
+}
+
+.wally-image {
+  position: relative; 
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 8rem;
+}
+
+.wally-image img {
+  border-radius: 0.5rem;
+  width: 10rem; 
+  height: auto;
+  margin-top: 60px;
+}
+
+
+body {
+  background-color: white;
+}
+
+
+.background-header {
+  background-image: url('/mancha2.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.background-combined {
+  background-image: url('/mancha2.png');
+  background-color: transparent;
+}
+
+
+.relative {
+  position: relative;
+}
+
+.relative::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 2500px; 
+  height: 2000px;
+  background-image: url('/mancha2.png');
+  background-size: cover;
+  background-position: center;
+  transform: translate(-50%, -50%) rotate(15deg);
+  opacity: 1;
+  z-index: 0;
+}
+
+.wally-section {
+  position: relative;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.wally-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+}
+
+.wally-nav {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.nav-link {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.wally-logo .logo-image {
+  width: 20rem;
+  margin: 1rem auto;
+}
+
+.logo-subtitle {
+  color: white;
+  margin-top: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+
+.features-section {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.features-section h2 {
+  font-size: 3rem;
+  color: #ec4899;
+}
+
+.features-section p {
+  margin-top: 1rem;
+  color: #4a4a4a;
+}
+
+
+.screenshot-section {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+.screenshot-wrapper {
+  background-color: #fce7f3;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.screenshot-image {
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.team-section {
+  text-align: center;
+  padding: 4rem 0;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.team-section h2 {
+  font-size: 2rem;
+  color: #ec4899;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-photo {
+  background-color: #e5e7eb;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.member-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-member h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.team-member p {
+  color: #6b7280;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #ec4899;
+  color: white;
+}
+
+.footer p {
+  margin: 0;
+}
